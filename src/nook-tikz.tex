@@ -831,7 +831,7 @@
     
     \begin{lstlisting}[gobble=8]
         \node[initial, state] (q0) {$q_0$};
-        \node[state, accepting, right=of q1] (q2) {$q_2$};
+        \node[state, right=of q0] (q1) {$q_1$};
         (*@\vphantom{h}@*)
         (*@\vphantom{h}@*)
         \path (q0)    edge[->] node[above] {0} (q1)
@@ -1377,7 +1377,7 @@
 \begin{frame}{Zusammenfassung}
   \begin{enumerate}
     \item TikZ-Zeichnungen bestehen aus \alert{Pfaden}, die über \alert{Koordinaten} definiert werden.
-    \item Fast alle scheamtischen Zeichnungen sind ein \alert{Graph}, bestehen also aus \alert{Knoten} und \alert{Kanten} und
+    \item Fast alle schematischen Zeichnungen sind ein \alert{Graph}, bestehen also aus \alert{Knoten} und \alert{Kanten} und
       werden auch als solche in TikZ gezeichnet.
     \item TikZ ist sehr umfangreich und enthält \alert{sehr viele Bibliotheken}.
     \item Bei Problemen und Fragen \alert{lies die Anleitung!}
